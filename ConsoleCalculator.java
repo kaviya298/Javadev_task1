@@ -10,15 +10,15 @@ public class ConsoleCalculator {
 
         while (continueCalculation) {
             try {
-                // Prompt for first number
+                
                 System.out.print("Enter the first number: ");
                 double num1 = Double.parseDouble(scanner.nextLine());
 
-                // Prompt for operation
+                
                 System.out.print("Enter an operation (+, -, *, /): ");
                 char operation = scanner.nextLine().charAt(0);
 
-                // Prompt for second number
+                
                 System.out.print("Enter the second number: ");
                 double num2 = Double.parseDouble(scanner.nextLine());
 
@@ -53,7 +53,7 @@ public class ConsoleCalculator {
                 System.out.println("Error: " + e.getMessage());
             }
 
-            // Ask if the user wants to perform another calculation
+           
             System.out.print("Do you want to perform another calculation? (yes/no): ");
             String response = scanner.nextLine().trim().toLowerCase();
             if (!response.equals("yes")) {
